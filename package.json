@@ -4,9 +4,13 @@
   "description": "ip based access control list",
   "main": "index.js",
   "keywords": [
-    "ip",
-    "acl"
+    "fireHol",
+    "ip acl"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BadLambdaJamma/firehol-node"
+  },
   "author": "jonathan newell",
   "license": "ISC",
   "dependencies": {
@@ -16,12 +20,14 @@
     "http-proxy-middleware": "^2.0.1",
     "node-cron": "^3.0.0",
     "readline-promise": "^1.0.5",
-    "ts-node": "^10.2.1",
-    "typescript": "^4.4.3"
+    "ts-node": "^10.2.1"
   },
   "scripts": {
     "dev": "ts-node ./src/server.ts",
     "build": "tsc --project ./tsconfig.json",
     "start": "node ./dist/server.js"
+  },
+  "devDependencies": {
+    "typescript": "^4.4.4"
   }
 }
